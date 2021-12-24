@@ -1,0 +1,15 @@
+*{
+    background: indianred;
+}
+
+.block{
+    height: 100vh;
+}
+
+label{
+    font-size: 15px;
+}
+button {
+    background-color: blueviolet;
+    color: white;
+}
