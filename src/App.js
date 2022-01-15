@@ -6,8 +6,8 @@ const App = () => {
   const [info, setInfo] = useState();
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
-  const [heightVl, setHeightVl] = useState("");
-  const [weightVl, setWeightVl] = useState("");
+  const [heightVl, setHeightVl] = useState();
+  const [weightVl, setWeightVl] = useState();
   
   const handleBmi = () => {
     
