@@ -6,7 +6,11 @@ const App = () => {
   const [info, setInfo] = useState();
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
+  const [heightVl, setHeightVl] = useState("");
+  const [weightVl, setWeightVl] = useState("");
+  
   const handleBmi = () => {
+    
     let val = (
       [Number(weight) / Number(height) / Number(height)] * 10000
     ).toFixed(1);
@@ -20,6 +24,8 @@ const App = () => {
     } else {
       setInfo("Obese");
     }
+    setHeightVl("");
+    setWeightVl("");
   };
   return (
     <div className="block ui container">
@@ -30,12 +36,14 @@ const App = () => {
         type="text"
         onChange={(e) => setHeight(e.target.value)}
         placeholder="height in cm"
+        value={heightVl}
       /><br/>
       <label>Weight : </label>
       <input
         type="text"
         onChange={(e) => setWeight(e.target.value)}
         placeholder="Weight in kg"
+        value={weightVl}
       /><br/>
       <button onClick={handleBmi}>Calculate</button>
     </div>  
