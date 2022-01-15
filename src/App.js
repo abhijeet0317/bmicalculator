@@ -34,16 +34,16 @@ const App = () => {
       <label>Height : </label>
       <input
         type="text"
-        onChange={(e) => setHeight(e.target.value)}
-        placeholder="height in cm"
         value={heightVl}
+        onChange={(e) => setHeight(e.target.value)}
+        placeholder="height in cm";
       /><br/>
       <label>Weight : </label>
       <input
         type="text"
+        value={weightVl}
         onChange={(e) => setWeight(e.target.value)}
         placeholder="Weight in kg"
-        value={weightVl}
       /><br/>
       <button onClick={handleBmi}>Calculate</button>
     </div>  
